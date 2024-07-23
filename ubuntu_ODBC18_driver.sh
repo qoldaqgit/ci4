@@ -1,3 +1,4 @@
+#https://learn.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver16&tabs=ubuntu18-install%2Calpine17-install%2Cdebian8-install%2Credhat7-13-install%2Crhel7-offline
 if ! [[ "18.04 20.04 22.04 23.04" == *"$(lsb_release -rs)"* ]];
 then
     echo "Ubuntu $(lsb_release -rs) is not currently supported.";
