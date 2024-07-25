@@ -9,3 +9,11 @@ sudo a2ensite 000-default.conf
 sudo a2enmod rewrite
 
 sudo systemctl restart apache2
+
+clear
+
+echo "
+All CI4 projects were uninstalled
+
+Apache web server is back to default
+"
