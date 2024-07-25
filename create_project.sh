@@ -14,7 +14,7 @@ sudo mkdir  /var/www/$project
 sudo mv framework-$version/* /var/www/$project > /dev/null
 echo 'Cleaning ...'
 rm -R *$version*
-sudo chown $USER /var/www/$project
+sudo chown -R $USER /var/www/$project
 sudo chown -R www-data /var/www/$project/writable/
 
 sudo touch /etc/apache2/sites-available/$project.conf
