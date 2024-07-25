@@ -4,8 +4,9 @@
 project=$(echo $1 | tr '[:upper:]' '[:lower:]')
 version=$(echo '4.5.3')
 #Get ci4 source
-wget https://github.com/codeigniter4/framework/archive/refs/tags/v$version.tar.gz
-tar -xvzf v$version.tar.gz 
+wget -q https://github.com/codeigniter4/framework/archive/refs/tags/v$version.tar.gz
+
+tar -xzf v$version.tar.gz 
 sudo mkdir  /var/www/$project
 sudo mv framework-$version/* /var/www/$project > /dev/null
 echo 'Cleaning ...'
@@ -77,5 +78,10 @@ class Feature extends BaseConfig
 
 "| tee -a  /var/www/$project/app/Config/Feature.php  > /dev/null
 
-echo "CodeIgniter $version is now installed"
-echo "Find your project root @ /var/www/$project"
+clear
+
+echo "
+
+CodeIgniter $version is now installed, find your project root @ /var/www/$project
+
+"
