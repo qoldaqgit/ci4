@@ -1,6 +1,7 @@
 #Project name $1
 #! /bin/bash
 
+#set Variables
 project=$(echo $1 | tr '[:upper:]' '[:lower:]')
 version=$(echo '4.5.3')
 ip=$(echo ip a | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
