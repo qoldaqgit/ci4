@@ -44,3 +44,7 @@ echo "
 ODBC18 Driver - run sudo bash ubuntu_ODBC18_driver.sh to install
 MSSQL Driver - run sudo bash uubuntu_mssql_driver_php8.sh to install
 "
+#to log into a git repository
+#gh auth login
+#to get files from repo
+#gh repo clone [user]/[repo]
