@@ -3,6 +3,8 @@
 
 project=$(echo $1 | tr '[:upper:]' '[:lower:]')
 version=$(echo '4.5.3')
+$ip=$(echo ip a | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
+
 #Get ci4 source
 wget -q https://github.com/codeigniter4/framework/archive/refs/tags/v$version.tar.gz
 
@@ -84,4 +86,5 @@ echo "
 
 CodeIgniter $version is now installed, find your project root @ /var/www/$project
 
+on the browser go to http://$ip
 "
