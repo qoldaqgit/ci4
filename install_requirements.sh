@@ -2,7 +2,7 @@
 
 #install minimum requirements
 sudo apt update && sudo apt upgrade -y
-sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql -y 
+sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql gh -y 
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_project.sh
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_controller.sh
 
