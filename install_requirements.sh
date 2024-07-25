@@ -18,6 +18,9 @@ PHP - Server Side code
 gh - to get Github repositories
 nano - Text file editor
 ssmtp - Email sender, run sudo nano /etc/ssmtp/ssmtp.conf to add you config
+
+
+List of Available Software:
 CodeIgniter 4 - PHP Framework
 
 To create your CI4 project: bash create_project.sh [[project name]]
@@ -36,7 +39,6 @@ wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/ubuntu_ODBC18_drive
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/ubuntu_mssql_driver_php8.sh
 
 echo "
-List of Available Software:
 
 ODBC18 Driver - run sudo bash ubuntu_ODBC18_driver.sh to install
 MSSQL Driver - run sudo bash uubuntu_mssql_driver_php8.sh to install
