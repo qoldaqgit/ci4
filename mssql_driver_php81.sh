@@ -48,3 +48,25 @@ sudo service apache2 restart
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_project.sh
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_controller.sh
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/uninstall_ci4.sh
+
+
+clear
+
+echo "
+List of installed Software:
+
+Apache2 - Web Server
+PHP 8.1 - Server Side code
+nano - Text file editor
+ssmtp - Email sender, run sudo nano /etc/ssmtp/ssmtp.conf to add you config
+pecl - required to install MSSQL Driver
+ODBC18 Driver - required to install MSSQL Driver
+MSSQL Driver - to connect to MS SQL Server DB's
+
+
+List of Available Software:
+CodeIgniter 4 - PHP Framework
+
+To create your CI4 project: bash create_project.sh [[project name]]
+To create your CI4 controller: bash create_controller.sh [[project name]] [[controller name]]
+"
