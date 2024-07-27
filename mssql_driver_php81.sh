@@ -49,6 +49,11 @@ wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_project.sh
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_controller.sh
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/uninstall_ci4.sh
 
+cd /var/www/html/
+
+sudo wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/mysql_test.php
+
+cd ~
 
 clear
 
