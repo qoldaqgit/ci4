@@ -44,3 +44,7 @@ sudo a2enmod php8.1
 
 #Step 5. Restart Apache and test the sample script
 sudo service apache2 restart
+
+wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_project.sh
+wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_controller.sh
+wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/uninstall_ci4.sh
