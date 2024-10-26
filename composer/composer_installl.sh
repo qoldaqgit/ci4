@@ -11,3 +11,15 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createProject.sh
+wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createController.sh
+
+
+echo "
+To create your CI4 project: bash createProject.sh [[project name]]
+To create your CI4 controller: bash create_controller.sh [[project name]] [[controller name]]
+
+composer create-project codeigniter4/appstarter project-root-name
+
+#To install Shield
+composer require codeigniter4/shield
+php spark shield:setup"
