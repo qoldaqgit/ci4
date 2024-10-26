@@ -1,5 +1,9 @@
 #! /bin/bash
 
+#to Install execute
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/install_requirements.sh)"
+
+
 #install minimum requirements
 sudo apt update && sudo apt upgrade -y
 sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql gh nano ssmtp -y 
