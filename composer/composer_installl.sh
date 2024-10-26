@@ -13,7 +13,9 @@ sudo mv composer.phar /usr/local/bin/composer
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createProject.sh
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createController.sh
 
+clear
 
 echo "
+Composer installation complete
 To create your CI4 project: bash createProject.sh [[project name]]
 "
