@@ -38,6 +38,7 @@ To create your CI4 project: bash create_project.sh [[project name]]
 To create your CI4 controller: bash create_controller.sh [[project name]] [[controller name]]
 
 composer create-project codeigniter4/appstarter project-root-name
+composer require codeigniter4/shield
 "
 
 
