@@ -1,6 +1,6 @@
 #! /bin/bash
 #installer 
-# bash -c "$(wget -qLO -  )"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createProject.sh )"
 
 #Project name $1
 
