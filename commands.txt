@@ -1,0 +1,11 @@
+#check user auth level
+in app/config/auth.php
+
+  
+auth()->user()->ingroup('group-name')
+
+
+#Define user groups
+in App/Config/AuthGroups.php
+
+manage features and settings
