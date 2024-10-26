@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/composer_installl.sh)"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/composer_installl.sh)"
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql gh nano ssmtp git -y 
