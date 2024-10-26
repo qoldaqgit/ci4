@@ -6,7 +6,7 @@
 
 #install minimum requirements
 sudo apt update && sudo apt upgrade -y
-sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql gh nano ssmtp -y 
+sudo apt install apache2  php libapache2-mod-php php8.1-mbstring php-intl php-mysql gh nano ssmtp git -y 
 
 #download CI4 installation scripts
 wget -q https://raw.githubusercontent.com/qoldaqgit/ci4/main/create_project.sh
