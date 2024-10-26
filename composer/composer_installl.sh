@@ -16,10 +16,4 @@ wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/cr
 
 echo "
 To create your CI4 project: bash createProject.sh [[project name]]
-To create your CI4 controller: bash create_controller.sh [[project name]] [[controller name]]
-
-composer create-project codeigniter4/appstarter project-root-name
-
-#To install Shield
-composer require codeigniter4/shield
-php spark shield:setup"
+"
