@@ -89,4 +89,13 @@ echo "
 CodeIgniter $version is now installed, find your project root @ /var/www/$project
 
 on the browser go to http://$ip
+
+To create your CI4 controller: bash create_controller.sh [[project name]] [[controller name]]
+
+composer create-project codeigniter4/appstarter project-root-name
+
+#To install Shield
+cd /var/www/$project
+composer require codeigniter4/shield
+php spark shield:setup
 "
