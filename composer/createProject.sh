@@ -43,7 +43,12 @@ sudo systemctl restart apache2
 
 #Setup Dev Env
 touch /var/www/$project/.env
-echo CI_ENVIRONMENT = development | tee -a /var/www/$project/.env
+echo "CI_ENVIRONMENT = development
+
+database.default.hostname = localhost
+database.default.database = ci4
+database.default.username = new
+database.default.password = password" | tee -a /var/www/$project/.env
 
 #Activate autoRoute =true
 > /var/www/$project/app/Config/Routing.php
