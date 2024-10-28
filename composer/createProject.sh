@@ -44,7 +44,7 @@ sudo systemctl restart apache2
 #Setup Dev Env
 touch /var/www/$project/.env
 echo "CI_ENVIRONMENT = development
-
+app.baseURL = http://$ip
 database.default.hostname = localhost
 database.default.database = ci4
 database.default.username = new
