@@ -12,7 +12,7 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createProject.sh
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createController.sh
-
+wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/uninstall_ci4.sh
 clear
 
 echo "
