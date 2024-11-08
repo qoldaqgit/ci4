@@ -13,6 +13,8 @@ version=$(echo '4.5.3')
 ip=$(ip a | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
 $repository=$(echo 'https://gitea.qoldaq.duckdns.org/Project-Car/core.git')
 
+echo $repository
+
 #Install CI4 with compose
 #mkdir /var/www/$project
 #composer create-project codeigniter4/appstarter $project
