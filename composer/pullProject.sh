@@ -11,21 +11,22 @@
 project=$(echo $1 | tr '[:upper:]' '[:lower:]')
 version=$(echo '4.5.3')
 ip=$(ip a | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
-$repository=$(echo 'https://gitea.qoldaq.duckdns.org/Project-Car/core.git')
+#$repository=$(echo 'https://gitea.qoldaq.duckdns.org/Project-Car/core.git')
 
-echo $repository
+
+#echo $repository
 
 #Install CI4 with compose
 #mkdir /var/www/$project
 #composer create-project codeigniter4/appstarter $project
 
 cd /var/www/
-git clone $repository 
+git clone https://gitea.qoldaq.duckdns.org/Project-Car/core.git
 cd $project
 composer install
 sudo chown -R $USER /var/www/$project
 sudo chown -R www-data /var/www/$project/writable/
-git remote add origin $repository
+git remote add origin https://gitea.qoldaq.duckdns.org/Project-Car/core.git
 
 sudo touch /etc/apache2/sites-available/$project.conf
 
