@@ -16,8 +16,7 @@ wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/uninstall_c
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/pullProject.sh
 
 #setup ssmtp
-echo "
-#default email sender
+sudo echo "#default email sender
 root=admin@pablo.com
 #Email Server
 mailhub=10.8.0.6:1025
