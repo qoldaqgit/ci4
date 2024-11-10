@@ -6,7 +6,7 @@
 #Project name $1
 
 
-
+if [ -n $2 ];then
 #set Variables
 project=$(echo $1 | tr '[:upper:]' '[:lower:]')
 #version=$(echo '4.5.3')
@@ -62,3 +62,6 @@ app.baseURL = http://$ip
 # database.default.database = ci4
 # database.default.username = newuser
 # database.default.password = password" > /var/www/$project/.env
+else
+echo "Missing parameter, required 2 : [[name]] [[git url]]" 
+fi
