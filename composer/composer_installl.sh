@@ -14,9 +14,23 @@ wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/cr
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/createController.sh
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/uninstall_ci4.sh
 wget https://raw.githubusercontent.com/qoldaqgit/ci4/refs/heads/main/composer/pullProject.sh
+
+#setup ssmtp
+echo "
+#default email sender
+root=admin@pablo.com
+#Email Server
+mailhub=10.8.0.6:1025
+# Are users allowed to set their own From: address?
+# YES - Allow the user to specify their own From: address
+# NO - Use the system generated From: address
+FromLineOverride=YES
+" > /etc/ssmtp/ssmtp.conf
+
 clear
 
 echo "
 Composer installation complete
 To create your CI4 project: bash createProject.sh [[project name]]
+To pull a project : bash pullProjeect.sh [[project name]] [[git url]]
 "
